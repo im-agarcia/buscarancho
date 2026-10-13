@@ -1,5 +1,365 @@
 {
  "checked": {
+  "cabaprop:654bd7ccb6474d31a9bc19a4": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:66cc7344934e89409b5bb031": {
+   "balcony": true,
+   "bathrooms": 3,
+   "garage": null
+  },
+  "cabaprop:6902fcae5f9b3aad855033b8": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:69059fc4d5354b32bb738c72": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:696922ebcc8f3498fae166c3": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:69d5643aeb4ffd048e663f6c": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a0d48f367d04ff04fcb5234": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a17b5abef119099233d8d07": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a17b5b0ef119099233d8d2a": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a1e6d22ef11909923445439": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a26db62ef119099234ba3b3": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "cabaprop:6a28e8bcef119099234df071": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a28f7dcef119099234e0fbf": {
+   "balcony": true,
+   "bathrooms": 3,
+   "garage": null
+  },
+  "cabaprop:6a28f7dcef119099234e0fc2": {
+   "balcony": true,
+   "bathrooms": 3,
+   "garage": null
+  },
+  "cabaprop:6a35659bef119099235d6dc1": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a55023579fd013d9d3ecef2": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a5722210fb47fb50ddb38e1": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6a7f5be40fb47fb50d85a407": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6aa4e56b3e6a16a18050a621": {
+   "balcony": true,
+   "bathrooms": 3,
+   "garage": null
+  },
+  "cabaprop:6aa628b03e6a16a180523a8b": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6aadb3823e6a16a18060a7c6": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6aadb3833e6a16a18060a7d0": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6aadff073e6a16a180614f7b": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6aae016c3e6a16a1806158c8": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6aae14423e6a16a18061a0bd": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6ab365d33e6a16a180729681": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6abca0443e6a16a180875627": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "cabaprop:6ac0947f3e6a16a18092c17a": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "century21:343150": {
+   "balcony": null,
+   "bathrooms": null,
+   "garage": true
+  },
+  "century21:344227": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "century21:361100": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "century21:365347": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01910955-a859-7350-b682-777c14a21fa5": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:0191098a-6443-709a-ac65-4d7975eccb3a": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:0194a7c9-652b-7922-8e9d-af6d3c5e4cd3": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:0194fe8b-f96b-79dc-976c-927ec3033cc0": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019bb775-fd92-77f7-976c-0ff5b4c14373": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019bb77a-d925-727b-a4ae-61b4549d10db": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019bb77e-314b-7bf0-a73e-4bc0475e0689": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019bb783-73f0-75ff-998b-9202dc32af10": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019e46c6-269e-79ca-b680-e89132a3e50f": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019e46cd-19d3-7984-8be3-e2911655e828": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019e6ec6-720d-777a-bcec-8e9e57787c8f": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:019e9fc9-81d7-74e4-9300-09bed8557521": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019ec8e5-6e7e-73b5-975c-c3c4e8241c38": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:019fd9e0-5db9-73bf-ad17-71399c11df71": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019ff617-4421-7266-ad58-8e413a3495fc": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:019ffa85-408c-7008-ac2c-313247d4a583": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a00833-72a8-7e81-bcc7-fc0dcf7e3b27": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a017cb-d160-7601-9dae-e6da6c23f1fc": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a083bc-3474-7355-8d24-c0864c18cafa": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a09081-65ff-791a-a7bf-a9d6c34233ab": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:01a09840-dd1e-71af-9363-dad68fe55a46": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a0d299-d6ba-76d7-acb1-deffc2e12ab0": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a0e5a8-9358-7ae4-86ac-373c8fe5b525": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a0ec33-d8e8-77cf-a5d0-ca16d1887c4e": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:01a0ec5b-1d61-7a90-aa7b-d93cd274d557": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:01a0f00b-6dd0-78ef-9f3c-7989254cafb1": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a109b0-9a24-7b3d-a604-2756f3f7fa53": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a1156e-ed50-7166-90e8-73efa2078489": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a1158c-a46d-7412-8059-e0dcb54ce1e2": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:01a11ae6-1c78-7628-a67c-a641b0568e77": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a11fe6-6209-77a7-bd48-e340c6baae9b": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a128b0-4840-72c8-8ed8-47579e9d2b9a": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:01a12a34-6215-7027-b20c-3e7ee55924eb": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:01c3249b-0d23-3519-ba4a-2bac607f38c5": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:31d20c2e-939f-3ffa-adf2-86b0467809e8": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": null
+  },
+  "icasas:5dbf8232-cfc0-3c66-954a-fbef78f04fed": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:c6a17374-eca7-3dfb-bbc8-1ad7d721e891": {
+   "balcony": null,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:d253ca72-5ad5-3b1b-b767-780fe0a40988": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:dfb790c6-03b2-31e1-a128-c71921b95269": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "icasas:ea5f65fb-7bb4-3a05-b5a6-2167b6f53dda": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
   "mercadolibre:MLA1666884345": {
    "balcony": true,
    "bathrooms": 2,
@@ -342,6 +702,216 @@
   }
  },
  "listings": {
+  "cabaprop:6a17b5bbef119099233d8d70": {
+   "active": true,
+   "address": "Amenábar 3200",
+   "area": 94,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": 4,
+   "currency": "USD",
+   "description": "EXCELENTE DEPARTAMENTO 5 AMBIENTES | BALCóN AL FRENTE | MUY LUMINOSO! | COCHERA FIJA CUBIERTA | NúñEZ\nINMEJORABLE UBICACIóN A 2 CUADRAS DE AV. CABILDO Y 6 CUADRAS PARQUE SAAVEDRA\n\nAMPLIO LIVING-COMEDOR CON SALIDA A BALCóN \nCOCINA INDEPENDIENTE\n4 DORMITORIOS CON PLACARES\nPISOS DE PARQUET EN IMPECABLE ESTADO\n2 BAñOS COMPLETOS\nLAVADERO INDEPENDIENTE\nCOCHERA FIJA CUBIERTA\n\nSUPERFICIE: 100m2 \n\nEXPENSAS: $259.000 \n\nPara más información o para coordinar una visita, no dudes en contactarnos. Estamos para ayudarte a encontrar tu próximo hogar.\n\n* Toda la información y medidas provistas son aproximadas y deberán ratificarse con la documentación pertinente y NO compromete contractualmente a nuestra empresa. Los gastos expresados (expensas, ABL, Aysa, entre otros) se refieren a la última información recabada y podrán ser revisados y confirmados a solicitud del interesado ante cualquier negociación *\n* NO Accesible personas con movilidad reducida (ley 5115) *",
+   "expenses": "ARS 259.000",
+   "first_seen": "2026-10-12 22:00",
+   "garage": true,
+   "id": "6a17b5bbef119099233d8d70",
+   "image": "https://http2.mlstatic.com/D_858335-MLA110936035174_052026-O.jpg",
+   "last_seen": "2026-10-12 22:00",
+   "location": "Nuñez, Capital Federal",
+   "misses": 0,
+   "price": 199000,
+   "price_history": [
+    {
+     "date": "2026-10-12 22:00",
+     "price": 199000
+    }
+   ],
+   "rooms": 5,
+   "sin_confirmar": [],
+   "source": "cabaprop",
+   "title": "¡oportunidad! Venta Departamento 5 Ambientes | Muy Luminoso Cochera Cubierta Fija",
+   "url": "https://cabaprop.com.ar/propiedad/6a17b5bbef119099233d8d70/oportunidad-Venta-Departamento-5-Ambientes-Muy-Luminoso-Cochera-Cubierta-Fija"
+  },
+  "cabaprop:6aa0db2e3e6a16a18044e54e": {
+   "active": true,
+   "address": "Blanco Encalada 3600",
+   "area": 74,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": 3,
+   "currency": "USD",
+   "description": "Excelente 4 amb 2 baños en Belgrano R / Coghlan (Blanco Encalada 3600). 5 piso contrafrente súper luminoso, silencioso y con vista abierta panorámica. 81 m2 totales (74 cub + 7 balcón corrido). Amplio living-comedor 6.70x3.80, 3 cómodos dormitorios con placard, cocina con doble mesada y lavadero independiente. Incluye cochera y baulera. Cerca de Est. Coghlan y Belgrano R. U$S 170.000. Apto crédito bancario! Las características, medidas, expensas y superficies consignadas son aproximadas, sujetos a verificación y/o ajuste, fotos de carácter no contractual. CPI 2674 A34323.",
+   "expenses": "ARS 225.000",
+   "first_seen": "2026-10-12 22:00",
+   "garage": true,
+   "id": "6aa0db2e3e6a16a18044e54e",
+   "image": "https://http2.mlstatic.com/D_790059-MLA117367527480_102026-O.jpg",
+   "last_seen": "2026-10-12 22:00",
+   "location": "Belgrano, Capital Federal",
+   "misses": 0,
+   "price": 170000,
+   "price_history": [
+    {
+     "date": "2026-10-12 22:00",
+     "price": 170000
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "cabaprop",
+   "title": "Departamento De 4 Ambientes En Venta En Belgrano",
+   "url": "https://cabaprop.com.ar/propiedad/6aa0db2e3e6a16a18044e54e/Departamento-De-4-Ambientes-En-Venta-En-Belgrano"
+  },
+  "icasas:01940596-ac71-7c46-b254-04a0abcd518e": {
+   "active": true,
+   "address": "",
+   "area": 82,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": 3,
+   "currency": "USD",
+   "description": "Departamento de 4 ambientes, con cochera, a la calle piso 7, muy luminoso y está impecable.- Pisos de madera.- Balcón corrido...",
+   "expenses": null,
+   "first_seen": "2026-10-12 22:00",
+   "garage": true,
+   "id": "01940596-ac71-7c46-b254-04a0abcd518e",
+   "image": "https://img.resemmedia.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci8wMTk0MDU5Ni1hYzcxLTdjNDYtYjI1NC0wNGEwYWJjZDUxOGUvMmFmZDYyNWYyMGNjM2U3NDU2MDY2Y2I1M2E0NTU0MTczMjc0ZmYxZjFiYWEzZjYxNGY2MDA1MDMwNGZiZmU1Yi5qcGVnIiwiYnJhbmQiOiJyZXNlbSIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjozNTQsImhlaWdodCI6MjQwLCJmaXQiOiJjb3ZlciJ9fX0=",
+   "last_seen": "2026-10-12 22:00",
+   "location": "Belgrano, Capital Federal",
+   "misses": 0,
+   "price": 198000,
+   "price_history": [
+    {
+     "date": "2026-10-12 22:00",
+     "price": 198000
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "icasas",
+   "title": "Departamento en Belgrano, Capital Federal",
+   "url": "https://www.icasas.com.ar/inmueble/acf7-b2da-194061c-4a0abcd5214-7ccc"
+  },
+  "icasas:0194a7c9-652b-7922-8e9d-af6d3c5e4cd3": {
+   "active": true,
+   "address": "",
+   "area": 85,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": 3,
+   "currency": "USD",
+   "description": "Muy cómodo departamento de 4 ambientes rodeado de balcones, con vista abierta ubicado en Olazábal entre Freire y Conde. Belgrano...",
+   "expenses": null,
+   "first_seen": "2026-10-12 22:00",
+   "garage": true,
+   "id": "0194a7c9-652b-7922-8e9d-af6d3c5e4cd3",
+   "image": "https://img.resemmedia.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci8wMTk0YTdjOS02NTJiLTc5MjItOGU5ZC1hZjZkM2M1ZTRjZDMvNTU1ZjJkYWE2OWRhNWYwMjc5ZmRlODhhOTExMWYzZjE4ZTUzYWU0OTFhYmJiMWRmNzE1Y2NmNDE2ZGMwMDMwMy5qcGVnIiwiYnJhbmQiOiJyZXNlbSIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjozNTQsImhlaWdodCI6MjQwLCJmaXQiOiJjb3ZlciJ9fX0=",
+   "last_seen": "2026-10-12 22:00",
+   "location": "Belgrano, Capital Federal",
+   "misses": 0,
+   "price": 170000,
+   "price_history": [
+    {
+     "date": "2026-10-12 22:00",
+     "price": 170000
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "icasas",
+   "title": "Departamento en Belgrano, Capital Federal",
+   "url": "https://www.icasas.com.ar/inmueble/65b1-8f23-194a84f-af6d3c5e4d59-79a8"
+  },
+  "icasas:019e6ec6-720d-777a-bcec-8e9e57787c8f": {
+   "active": true,
+   "address": "",
+   "area": 95,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": 3,
+   "currency": "USD",
+   "description": "Venta /Alquiler(solo por 12 meses) En el exclusivo Barrio de Belgrano, se ubica este excelente departamento 4 ambientes...",
+   "expenses": null,
+   "first_seen": "2026-10-12 22:00",
+   "garage": true,
+   "id": "019e6ec6-720d-777a-bcec-8e9e57787c8f",
+   "image": "https://img.resemmedia.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci8wMTllNmVjNi03MjBkLTc3N2EtYmNlYy04ZTllNTc3ODdjOGYvNTUxZDk2NmFmZjViM2QwNWU3NTcwYzI1YWI3YjEyYzVhOGI2ZWQxMzFlZmYwN2Y2N2YzMTIwYTUyNDg5YjA0MC5qcGVnIiwiYnJhbmQiOiJyZXNlbSIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjozNTQsImhlaWdodCI6MjQwLCJmaXQiOiJjb3ZlciJ9fX0=",
+   "last_seen": "2026-10-12 22:00",
+   "location": "Belgrano, Capital Federal",
+   "misses": 0,
+   "price": 195000,
+   "price_history": [
+    {
+     "date": "2026-10-12 22:00",
+     "price": 195000
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "icasas",
+   "title": "Departamento en Belgrano, Capital Federal",
+   "url": "https://www.icasas.com.ar/inmueble/7293-bd72-19e6f4c-8e9e57787d15-7800"
+  },
+  "icasas:019ec8e5-6e7e-73b5-975c-c3c4e8241c38": {
+   "active": true,
+   "address": "",
+   "area": 81,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": 3,
+   "currency": "USD",
+   "description": "Venta Departamento en Belgrano de 4 Ambientes con Cochera cubiertaSEMIPISO de 4 AMBIENTES con COCINA INDEPENDIENTE. Ubicado...",
+   "expenses": null,
+   "first_seen": "2026-10-12 22:00",
+   "garage": true,
+   "id": "019ec8e5-6e7e-73b5-975c-c3c4e8241c38",
+   "image": "https://img.resemmedia.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci8wMTllYzhlNS02ZTdlLTczYjUtOTc1Yy1jM2M0ZTgyNDFjMzgvYTAyOWNkYmFkMzJlNDgyMmMwZmZkYzE4NTc4MjA2OTRhOGQ4MzUzZmI0NWY5NDYwYTExMDIxZjdiZDhiMmQwNC5qcGVnIiwiYnJhbmQiOiJyZXNlbSIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjozNTQsImhlaWdodCI6MjQwLCJmaXQiOiJjb3ZlciJ9fX0=",
+   "last_seen": "2026-10-12 22:00",
+   "location": "Belgrano, Capital Federal",
+   "misses": 0,
+   "price": 199900,
+   "price_history": [
+    {
+     "date": "2026-10-12 22:00",
+     "price": 199900
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "icasas",
+   "title": "Departamento en Belgrano, Capital Federal",
+   "url": "https://www.icasas.com.ar/inmueble/6f04-97e2-19ec96b-c3c4e8241cbe-743b"
+  },
+  "icasas:01c3249b-0d23-3519-ba4a-2bac607f38c5": {
+   "active": true,
+   "address": "",
+   "area": 98,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": 3,
+   "currency": "USD",
+   "description": "4 AMBIENTES CON BALCÓN CORRIDO AL CONTRAFRENTE - SEMIPISO - PUERTA BLINDADA - TOILETTE CON DUCHA Y BAÑO COMPLETO - MUY LUMINOSO...",
+   "expenses": null,
+   "first_seen": "2026-10-12 22:00",
+   "garage": true,
+   "id": "01c3249b-0d23-3519-ba4a-2bac607f38c5",
+   "image": "https://img.resemmedia.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci8wMWMzMjQ5Yi0wZDIzLTM1MTktYmE0YS0yYmFjNjA3ZjM4YzUvMDc4M2Q1ODQwZjEwNWZiNzM4MmJiMzc3Njk0MGNlOTJkMmVlODdjMDJlMGJlMGVmNzg3NTExNTNmYmJkODhjYy5qcGciLCJicmFuZCI6InJlc2VtIiwiZWRpdHMiOnsicm90YXRlIjpudWxsLCJyZXNpemUiOnsid2lkdGgiOjM1NCwiaGVpZ2h0IjoyNDAsImZpdCI6ImNvdmVyIn19fQ==",
+   "last_seen": "2026-10-12 22:00",
+   "location": "Belgrano, Capital Federal",
+   "misses": 0,
+   "price": 185000,
+   "price_history": [
+    {
+     "date": "2026-10-12 22:00",
+     "price": 185000
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "icasas",
+   "title": "Departamento en Belgrano, Capital Federal",
+   "url": "https://www.icasas.com.ar/inmueble/da9-bad0-1c32521-2bac607f394b-359f"
+  },
   "mercadolibre:MLA1699588497": {
    "active": true,
    "address": "Av. Ricardo Balbín Al 2500",
@@ -356,7 +926,7 @@
    "garage": true,
    "id": "MLA1699588497",
    "image": "https://http2.mlstatic.com/D_NQ_NP_680739-MLA107831368022_032026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Av. Ricardo Balbín Al 2500, Belgrano, Capital Federal",
    "misses": 0,
    "price": 199900,
@@ -386,7 +956,7 @@
    "garage": true,
    "id": "MLA1717428151",
    "image": "https://http2.mlstatic.com/D_NQ_NP_679663-MLA108512463456_032026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Piso 2°a/frente, Belgrano, Capital Federal",
    "misses": 0,
    "price": 195000,
@@ -416,7 +986,7 @@
    "garage": true,
    "id": "MLA1753594067",
    "image": "https://http2.mlstatic.com/D_NQ_NP_932610-MLA109680604886_042026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Superí 1314, Belgrano R, Capital Federal",
    "misses": 0,
    "price": 185000,
@@ -446,7 +1016,7 @@
    "garage": true,
    "id": "MLA1795031199",
    "image": "https://http2.mlstatic.com/D_NQ_NP_858335-MLA110936035174_052026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Amenábar Al 3200, Núñez, Capital Federal",
    "misses": 0,
    "price": 199000,
@@ -476,7 +1046,7 @@
    "garage": true,
    "id": "MLA2072845103",
    "image": "https://http2.mlstatic.com/D_NQ_NP_790059-MLA117367527480_102026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "BLANCO ENCALADA 3600, Belgrano, Capital Federal",
    "misses": 0,
    "price": 170000,
@@ -506,7 +1076,7 @@
    "garage": true,
    "id": "MLA2076569545",
    "image": "https://http2.mlstatic.com/D_NQ_NP_733519-MLA117575174163_092026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Campos Salles 2100, Núñez, Capital Federal",
    "misses": 0,
    "price": 189000,
@@ -536,7 +1106,7 @@
    "garage": true,
    "id": "MLA2104951931",
    "image": "https://http2.mlstatic.com/D_NQ_NP_776192-MLA113063221666_072026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "LA PAMPA Al 2000. Entre Arcos Y O'higgins, Belgrano, Capital Federal",
    "misses": 0,
    "price": 197000,
@@ -566,7 +1136,7 @@
    "garage": true,
    "id": "MLA3289180878",
    "image": "https://http2.mlstatic.com/D_NQ_NP_668538-MLA115405020850_082026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "BLANCO ENCALADA Al 3600. Entre Washington Y Naon, Belgrano R, Capital Federal",
    "misses": 0,
    "price": 195000,
@@ -596,7 +1166,7 @@
    "garage": true,
    "id": "MLA4021904846",
    "image": "https://http2.mlstatic.com/D_NQ_NP_797803-MLA113970549927_062026-O.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Amenábar 4198, Núñez, Capital Federal",
    "misses": 0,
    "price": 187000,
@@ -626,7 +1196,7 @@
    "garage": true,
    "id": "893341",
    "image": "https://kkevijpywsidvjgujztg.supabase.co/storage/v1/object/public/property-photos/AR/publications/13749226/photo_1791580908312589146_41821091_medium.webp",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Belgrano, CABA",
    "misses": 0,
    "price": 193000,
@@ -656,7 +1226,7 @@
    "garage": true,
    "id": "609495",
    "image": "https://d1acdg20u0pmxj.cloudfront.net/listings/80e46ccb-2e65-4ced-8d7f-5feddc1e18f2/7b129194-9e24-411a-ad4f-03e4fc49e61b.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Belgrano, Capital Federal",
    "misses": 0,
    "price": 199000,
@@ -686,7 +1256,7 @@
    "garage": true,
    "id": "647950",
    "image": "https://d1acdg20u0pmxj.cloudfront.net/listings/98f59832-8457-4aa3-985f-8c8074c80b5a/fbf5f215-b851-43ea-86ed-0954ba6f2935.jpg",
-   "last_seen": "2026-10-12 21:43",
+   "last_seen": "2026-10-12 22:00",
    "location": "Nuñez, Capital Federal",
    "misses": 0,
    "price": 189000,
