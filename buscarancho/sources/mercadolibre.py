@@ -11,6 +11,8 @@ from .base import Source
 BASE = "https://inmuebles.mercadolibre.com.ar"
 TIPOS = {"departamento": "departamentos", "casa": "casas", "ph": "ph"}
 PAGE_SIZE = 48
+# acá "Belgrano" es una zona aparte de sus sub-barrios: hay que pedirlos uno por uno
+SUBZONAS = {"belgrano": ["belgrano", "belgrano-c", "belgrano-r", "belgrano-chico", "belgrano-barrancas"]}
 
 
 def _polycards(html: str) -> list[dict]:
@@ -41,7 +43,7 @@ class MercadoLibre(Source):
             parts.append(f"{ambientes}-ambientes")
         parts.append("capital-federal")
         if barrio:
-            parts.append(slug(barrio))
+            parts.append(barrio)
         suffix = f"_Desde_{offset + 1}" if offset else ""
         if f.precio_max:
             suffix += f"_PriceRange_{f.precio_min or 0}{f.moneda}-{f.precio_max}{f.moneda}"
@@ -51,7 +53,8 @@ class MercadoLibre(Source):
 
     def search(self, f: Filters) -> Iterable[Listing]:
         seen: set[str] = set()
-        for barrio, ambientes in ((b, a) for b in f.barrios or [None] for a in f.ambientes()):
+        zonas = list(dict.fromkeys(z for b in f.barrios for z in SUBZONAS.get(slug(b), [slug(b)]))) or [None]
+        for barrio, ambientes in ((b, a) for b in zonas for a in f.ambientes()):
             for page in range(self.max_pages):
                 cards = _polycards(http.get(self._url(f, barrio, ambientes, page * PAGE_SIZE)).text)
                 fresh = 0

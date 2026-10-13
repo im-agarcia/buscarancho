@@ -26,7 +26,9 @@ class Argenprop(Source):
     def _url(self, f: Filters, ambientes: int | None) -> str:
         parts = [TIPOS.get(f.tipo, "departamentos"), OPERACIONES.get(f.operacion, "venta")]
         if f.barrios:
-            parts.append("-o-".join(slug(b) for b in f.barrios))
+            # Belgrano incluye sus sub-barrios; Belgrano R además existe como zona propia
+            zonas = ("belgrano" if "belgrano" in slug(b) and slug(b) != "belgrano-r" else slug(b) for b in f.barrios)
+            parts.append("-o-".join(dict.fromkeys(zonas)))
         if ambientes:
             parts.append(f"{ambientes}-ambientes")
         if f.precio_max:

@@ -1,7 +1,12 @@
 {
   "operacion": "venta",
   "tipo": "departamento",
-  "barrios": ["Belgrano", "Núñez", "Belgrano R"],
+  "barrios": [
+    "Belgrano",
+    "Núñez",
+    "Belgrano R",
+    "Barrancas de Belgrano"
+  ],
   "ambientes_min": 4,
   "ambientes_max": null,
   "banos_min": 2,

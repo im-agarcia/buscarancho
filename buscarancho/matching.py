@@ -29,6 +29,12 @@ def fill_from_text(listing: Listing, text: str) -> None:
         listing.bathrooms = int(m.group(1) or m.group(2))
 
 
+def in_barrio(location: str, barrio: str) -> bool:
+    """Todas las palabras del barrio están en la ubicación: "Belgrano Barrancas" ~ "Barrancas de Belgrano"."""
+    words = set(re.findall(r"[a-z0-9]+", norm(location)))
+    return all(w in words for w in re.findall(r"[a-z0-9]+", norm(barrio)))
+
+
 def reject_reason(listing: Listing, f: Filters, check_barrio: bool = True) -> str | None:
     """Motivo de descarte según los datos conocidos; None si (hasta donde se sabe) cumple."""
     if listing.price is None:
@@ -46,7 +52,7 @@ def reject_reason(listing: Listing, f: Filters, check_barrio: bool = True) -> st
             return "más ambientes"
     if f.banos_min and listing.bathrooms is not None and listing.bathrooms < f.banos_min:
         return "menos baños"
-    if check_barrio and f.barrios and listing.location and not any(norm(b) in norm(listing.location) for b in f.barrios):
+    if check_barrio and f.barrios and listing.location and not any(in_barrio(listing.location, b) for b in f.barrios):
         return "otro barrio"
     if f.cochera and listing.garage is False:
         return "sin cochera"

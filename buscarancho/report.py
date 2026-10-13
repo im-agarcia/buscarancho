@@ -35,6 +35,8 @@ def _line(group: list[dict], labels: dict[str, str]) -> str:
     if e.get("location") and norm(e["location"]) != norm(e.get("address")):
         line += f" ({e['location']})"
     line += " — " + ", ".join(x for x in feats if x)
+    if e.get("price") and e.get("area"):
+        line += f" — {e.get('currency') or ''} {round(e['price'] / e['area']):,}/m²".replace(",", ".")
     if e.get("expenses"):
         line += f" — exp. {e['expenses']}"
     if e.get("sin_confirmar"):

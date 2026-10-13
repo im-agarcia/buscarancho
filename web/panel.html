@@ -141,7 +141,7 @@ function render() {
     el("span", { className: s.ok ? "" : "bad", title: s.ok ? "" : s.error }, `${s.ok ? "✓" : "✗"} ${LABELS[n] || n}${s.ok ? `: ${s.matched}` : ": sin respuesta"}`)));
 
   $("#grid").replaceChildren(...list.map(({ g, e, isNew }) => {
-    const feats = [e.rooms && `${e.rooms} amb`, e.bathrooms && `${e.bathrooms} baños`, e.area && `${e.area} m²`].filter(Boolean).join(" · ");
+    const feats = [e.rooms && `${e.rooms} amb`, e.bathrooms && `${e.bathrooms} baños`, e.area && `${e.area} m²`, e.price && e.area && `${e.currency || ""} ${Math.round(e.price / e.area).toLocaleString("es-AR")}/m²`].filter(Boolean).join(" · ");
     const body = el("div", { className: "body" },
       el("div", { className: "price" }, money(e), isNew ? el("span", { className: "tag" }, "nueva") : ""),
       el("div", {}, e.address || e.title),

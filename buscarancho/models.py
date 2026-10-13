@@ -26,6 +26,10 @@ def to_int(text) -> int | None:
     return int(m.group().replace(".", "")) if m and m.group().replace(".", "") else None
 
 
+# nombres alternativos -> el que usan los portales
+ALIAS_BARRIOS = {"barrancas de belgrano": "Belgrano Barrancas", "barrancas": "Belgrano Barrancas"}
+
+
 @dataclass
 class Filters:
     operacion: str = "venta"
@@ -52,6 +56,7 @@ class Filters:
     @classmethod
     def from_dict(cls, d: dict) -> "Filters":
         known = {k: v for k, v in d.items() if k in cls.__dataclass_fields__}
+        known["barrios"] = list(dict.fromkeys(ALIAS_BARRIOS.get(norm(b), b) for b in known.get("barrios") or []))
         return cls(**known)
 
 
