@@ -20,8 +20,23 @@
    "bathrooms": 2,
    "garage": false
   },
+  "mercadolibre:MLA1753594067": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
   "mercadolibre:MLA1774796481": {
    "balcony": true,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA1795031199": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
+  "mercadolibre:MLA1926294529": {
+   "balcony": false,
    "bathrooms": 2,
    "garage": false
   },
@@ -31,6 +46,16 @@
    "garage": false
   },
   "mercadolibre:MLA1945069881": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA1948718941": {
+   "balcony": false,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA2070249019": {
    "balcony": true,
    "bathrooms": 2,
    "garage": false
@@ -55,9 +80,19 @@
    "bathrooms": 2,
    "garage": true
   },
+  "mercadolibre:MLA2120410373": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": false
+  },
   "mercadolibre:MLA2120422935": {
    "balcony": true,
    "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA2133048295": {
+   "balcony": true,
+   "bathrooms": 3,
    "garage": false
   },
   "mercadolibre:MLA2135901273": {
@@ -70,7 +105,27 @@
    "bathrooms": 2,
    "garage": false
   },
+  "mercadolibre:MLA2160860027": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": false
+  },
   "mercadolibre:MLA2161216895": {
+   "balcony": false,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA2810594018": {
+   "balcony": false,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA2810619722": {
+   "balcony": false,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA2810632552": {
    "balcony": false,
    "bathrooms": 2,
    "garage": false
@@ -85,7 +140,22 @@
    "bathrooms": 2,
    "garage": false
   },
+  "mercadolibre:MLA3289180878": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
   "mercadolibre:MLA3291098770": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA3341777784": {
+   "balcony": false,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA3341783824": {
    "balcony": true,
    "bathrooms": 2,
    "garage": false
@@ -100,9 +170,24 @@
    "bathrooms": 2,
    "garage": false
   },
+  "mercadolibre:MLA3617381316": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": false
+  },
   "mercadolibre:MLA3670042378": {
    "balcony": true,
    "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA3679054076": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA3720089512": {
+   "balcony": false,
+   "bathrooms": 3,
    "garage": false
   },
   "mercadolibre:MLA3720473488": {
@@ -122,6 +207,16 @@
   },
   "mercadolibre:MLA3907933262": {
    "balcony": false,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA3912417380": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA3927653618": {
+   "balcony": true,
    "bathrooms": 2,
    "garage": false
   },
@@ -190,8 +285,18 @@
    "bathrooms": 2,
    "garage": false
   },
+  "mercadolibre:MLA4021904846": {
+   "balcony": true,
+   "bathrooms": 2,
+   "garage": true
+  },
   "mercadolibre:MLA4032124512": {
    "balcony": false,
+   "bathrooms": 2,
+   "garage": false
+  },
+  "mercadolibre:MLA4044583962": {
+   "balcony": true,
    "bathrooms": 2,
    "garage": false
   },
@@ -251,7 +356,7 @@
    "garage": true,
    "id": "MLA1699588497",
    "image": "https://http2.mlstatic.com/D_NQ_NP_680739-MLA107831368022_032026-O.jpg",
-   "last_seen": "2026-10-12 21:32",
+   "last_seen": "2026-10-12 21:38",
    "location": "Av. Ricardo Balbín Al 2500, Belgrano, Capital Federal",
    "misses": 0,
    "price": 199900,
@@ -281,7 +386,7 @@
    "garage": true,
    "id": "MLA1717428151",
    "image": "https://http2.mlstatic.com/D_NQ_NP_679663-MLA108512463456_032026-O.jpg",
-   "last_seen": "2026-10-12 21:32",
+   "last_seen": "2026-10-12 21:38",
    "location": "Piso 2°a/frente, Belgrano, Capital Federal",
    "misses": 0,
    "price": 195000,
@@ -297,6 +402,66 @@
    "title": "Alquiler O Venta Departamento - Belgrano",
    "url": "https://departamento.mercadolibre.com.ar/MLA-1717428151-alquiler-o-venta-departamento-belgrano-_JM"
   },
+  "mercadolibre:MLA1753594067": {
+   "active": true,
+   "address": "Superí 1314",
+   "area": 65,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": null,
+   "currency": "USD",
+   "description": "",
+   "expenses": null,
+   "first_seen": "2026-10-12 21:38",
+   "garage": true,
+   "id": "MLA1753594067",
+   "image": "https://http2.mlstatic.com/D_NQ_NP_932610-MLA109680604886_042026-O.jpg",
+   "last_seen": "2026-10-12 21:38",
+   "location": "Superí 1314, Belgrano R, Capital Federal",
+   "misses": 0,
+   "price": 185000,
+   "price_history": [
+    {
+     "date": "2026-10-12 21:38",
+     "price": 185000
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "mercadolibre",
+   "title": "4 Amb Al Frente Con Balcon Y Espacio Guardacoche",
+   "url": "https://departamento.mercadolibre.com.ar/MLA-1753594067-4-amb-al-frente-con-balcon-y-espacio-guardacoche-_JM"
+  },
+  "mercadolibre:MLA1795031199": {
+   "active": true,
+   "address": "Amenábar Al 3200",
+   "area": 94,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": null,
+   "currency": "USD",
+   "description": "",
+   "expenses": null,
+   "first_seen": "2026-10-12 21:38",
+   "garage": true,
+   "id": "MLA1795031199",
+   "image": "https://http2.mlstatic.com/D_NQ_NP_858335-MLA110936035174_052026-O.jpg",
+   "last_seen": "2026-10-12 21:38",
+   "location": "Amenábar Al 3200, Núñez, Capital Federal",
+   "misses": 0,
+   "price": 199000,
+   "price_history": [
+    {
+     "date": "2026-10-12 21:38",
+     "price": 199000
+    }
+   ],
+   "rooms": 5,
+   "sin_confirmar": [],
+   "source": "mercadolibre",
+   "title": "¡oportunidad! Venta Departamento 5 Ambientes | Muy Luminoso  Cochera Cubierta Fija",
+   "url": "https://departamento.mercadolibre.com.ar/MLA-1795031199-oportunidad-venta-departamento-5-ambientes-muy-luminoso-cochera-cubierta-fija-_JM"
+  },
   "mercadolibre:MLA2072845103": {
    "active": true,
    "address": "BLANCO ENCALADA 3600",
@@ -311,7 +476,7 @@
    "garage": true,
    "id": "MLA2072845103",
    "image": "https://http2.mlstatic.com/D_NQ_NP_790059-MLA117367527480_102026-O.jpg",
-   "last_seen": "2026-10-12 21:32",
+   "last_seen": "2026-10-12 21:38",
    "location": "BLANCO ENCALADA 3600, Belgrano, Capital Federal",
    "misses": 0,
    "price": 170000,
@@ -341,7 +506,7 @@
    "garage": true,
    "id": "MLA2076569545",
    "image": "https://http2.mlstatic.com/D_NQ_NP_733519-MLA117575174163_092026-O.jpg",
-   "last_seen": "2026-10-12 21:32",
+   "last_seen": "2026-10-12 21:38",
    "location": "Campos Salles 2100, Núñez, Capital Federal",
    "misses": 0,
    "price": 189000,
@@ -371,7 +536,7 @@
    "garage": true,
    "id": "MLA2104951931",
    "image": "https://http2.mlstatic.com/D_NQ_NP_776192-MLA113063221666_072026-O.jpg",
-   "last_seen": "2026-10-12 21:32",
+   "last_seen": "2026-10-12 21:38",
    "location": "LA PAMPA Al 2000. Entre Arcos Y O'higgins, Belgrano, Capital Federal",
    "misses": 0,
    "price": 197000,
@@ -387,6 +552,66 @@
    "title": "Oppel | Departamento En Venta | Belgrano  Capital Federal |  Cod: 14084",
    "url": "https://departamento.mercadolibre.com.ar/MLA-2104951931-oppel-departamento-en-venta-belgrano-capital-federal-cod-14084-_JM"
   },
+  "mercadolibre:MLA3289180878": {
+   "active": true,
+   "address": "BLANCO ENCALADA Al 3600. Entre Washington Y Naon",
+   "area": 72,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": null,
+   "currency": "USD",
+   "description": "",
+   "expenses": null,
+   "first_seen": "2026-10-12 21:38",
+   "garage": true,
+   "id": "MLA3289180878",
+   "image": "https://http2.mlstatic.com/D_NQ_NP_668538-MLA115405020850_082026-O.jpg",
+   "last_seen": "2026-10-12 21:38",
+   "location": "BLANCO ENCALADA Al 3600. Entre Washington Y Naon, Belgrano R, Capital Federal",
+   "misses": 0,
+   "price": 195000,
+   "price_history": [
+    {
+     "date": "2026-10-12 21:38",
+     "price": 195000
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "mercadolibre",
+   "title": "Oppel | Departamento En Venta | Belgrano R  Capital Federal |  Cod: 12031",
+   "url": "https://departamento.mercadolibre.com.ar/MLA-3289180878-oppel-departamento-en-venta-belgrano-r-capital-federal-cod-12031-_JM"
+  },
+  "mercadolibre:MLA4021904846": {
+   "active": true,
+   "address": "Amenábar 4198",
+   "area": 80,
+   "balcony": true,
+   "bathrooms": 2,
+   "bedrooms": null,
+   "currency": "USD",
+   "description": "",
+   "expenses": null,
+   "first_seen": "2026-10-12 21:38",
+   "garage": true,
+   "id": "MLA4021904846",
+   "image": "https://http2.mlstatic.com/D_NQ_NP_797803-MLA113970549927_062026-O.jpg",
+   "last_seen": "2026-10-12 21:38",
+   "location": "Amenábar 4198, Núñez, Capital Federal",
+   "misses": 0,
+   "price": 187000,
+   "price_history": [
+    {
+     "date": "2026-10-12 21:38",
+     "price": 187000
+    }
+   ],
+   "rooms": 4,
+   "sin_confirmar": [],
+   "source": "mercadolibre",
+   "title": "Dueño Vende: Depto 4 Amb En Núñez, A 1 Cuadra De Cabildo. Luminoso, Sin Edificios Alrededor. Cerca Del Boulevard San Isidro, Plazas, Subte D Y Gral Paz. Apto Crédito. ¡encontrá Tu Próximo Hogar!",
+   "url": "https://departamento.mercadolibre.com.ar/MLA-4021904846-dueno-vende-depto-4-amb-en-nunez-a-1-cuadra-de-cabildo-luminoso-sin-edificios-alrededor-cerca-del-boulevard-san-isidro-plazas-subte-d-y-gral-paz-apto-credito-encontra-tu-proximo-hogar-_JM"
+  },
   "mudafy:893341": {
    "active": true,
    "address": "Mendoza 2500",
@@ -401,7 +626,7 @@
    "garage": true,
    "id": "893341",
    "image": "https://kkevijpywsidvjgujztg.supabase.co/storage/v1/object/public/property-photos/AR/publications/13749226/photo_1791580908312589146_41821091_medium.webp",
-   "last_seen": "2026-10-12 21:32",
+   "last_seen": "2026-10-12 21:38",
    "location": "Belgrano, CABA",
    "misses": 0,
    "price": 193000,
@@ -431,7 +656,7 @@
    "garage": true,
    "id": "609495",
    "image": "https://d1acdg20u0pmxj.cloudfront.net/listings/80e46ccb-2e65-4ced-8d7f-5feddc1e18f2/7b129194-9e24-411a-ad4f-03e4fc49e61b.jpg",
-   "last_seen": "2026-10-12 21:32",
+   "last_seen": "2026-10-12 21:38",
    "location": "Belgrano, Capital Federal",
    "misses": 0,
    "price": 199000,
@@ -461,7 +686,7 @@
    "garage": true,
    "id": "647950",
    "image": "https://d1acdg20u0pmxj.cloudfront.net/listings/98f59832-8457-4aa3-985f-8c8074c80b5a/fbf5f215-b851-43ea-86ed-0954ba6f2935.jpg",
-   "last_seen": "2026-10-12 21:32",
+   "last_seen": "2026-10-12 21:38",
    "location": "Nuñez, Capital Federal",
    "misses": 0,
    "price": 189000,

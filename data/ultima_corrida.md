@@ -1,20 +1,17 @@
-# Buscarancho — 2026-10-12 21:32
+# Buscarancho — 2026-10-12 21:38
 
-## 🆕 7 propiedades nuevas
+## 🆕 4 propiedades nuevas
 
-- **USD 170.000** — BLANCO ENCALADA 3600 (BLANCO ENCALADA 3600, Belgrano, Capital Federal) — 4 amb, 2 baños, 74 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-2072845103-departamento-de-4-ambientes-en-venta-en-belgrano-_JM)
-- **USD 189.000** — Campos Salles 2100 (Campos Salles 2100, Núñez, Capital Federal) — 4 amb, 2 baños, 67 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-2076569545-venta-departamento-nunez-4-amb-balcon-cochera-luz-_JM) · [RE/MAX](https://www.remax.com.ar/listings/venta-departamento-nunez-4-amb-balcon-cochera-luz)
-- **USD 193.000** — Mendoza 2500 (Belgrano, CABA) — 4 amb, 2 baños, 79 m² — exp. ARS 244.000 — [Mudafy](https://mudafy.com.ar/departamentos/mendoza-2500-departamento-en-venta-893341)
-- **USD 195.000** — Piso 2°a/frente (Piso 2°a/frente, Belgrano, Capital Federal) — 4 amb, 2 baños, 82 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-1717428151-alquiler-o-venta-departamento-belgrano-_JM)
-- **USD 197.000** — LA PAMPA Al 2000. Entre Arcos Y O'higgins (LA PAMPA Al 2000. Entre Arcos Y O'higgins, Belgrano, Capital Federal) — 4 amb, 2 baños, 69 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-2104951931-oppel-departamento-en-venta-belgrano-capital-federal-cod-14084-_JM)
-- **USD 199.000** — Blanco Encalada 2300 (Belgrano, Capital Federal) — 4 amb, 2 baños, 82 m² — exp. ARS 350.000 — [RE/MAX](https://www.remax.com.ar/listings/venta-departamento-4-amb-belgrano-balcon-vista-rio)
-- **USD 199.900** — Av. Ricardo Balbín Al 2500 (Av. Ricardo Balbín Al 2500, Belgrano, Capital Federal) — 4 amb, 2 baños, 74 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-1699588497-departamento-4-ambientes-cochera-balcon-belgrano-_JM)
+- **USD 185.000** — Superí 1314 (Superí 1314, Belgrano R, Capital Federal) — 4 amb, 2 baños, 65 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-1753594067-4-amb-al-frente-con-balcon-y-espacio-guardacoche-_JM)
+- **USD 187.000** — Amenábar 4198 (Amenábar 4198, Núñez, Capital Federal) — 4 amb, 2 baños, 80 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-4021904846-dueno-vende-depto-4-amb-en-nunez-a-1-cuadra-de-cabildo-luminoso-sin-edificios-alrededor-cerca-del-boulevard-san-isidro-plazas-subte-d-y-gral-paz-apto-credito-encontra-tu-proximo-hogar-_JM)
+- **USD 195.000** — BLANCO ENCALADA Al 3600. Entre Washington Y Naon (BLANCO ENCALADA Al 3600. Entre Washington Y Naon, Belgrano R, Capital Federal) — 4 amb, 2 baños, 72 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-3289180878-oppel-departamento-en-venta-belgrano-r-capital-federal-cod-12031-_JM)
+- **USD 199.000** — Amenábar Al 3200 (Amenábar Al 3200, Núñez, Capital Federal) — 5 amb, 2 baños, 94 m² — [MercadoLibre](https://departamento.mercadolibre.com.ar/MLA-1795031199-oportunidad-venta-departamento-5-ambientes-muy-luminoso-cochera-cubierta-fija-_JM)
 
 ## Portales
 
-8 avisos activos que cumplen el filtro.
+12 avisos activos que cumplen el filtro.
 
-- ❌ Argenprop: www.argenprop.com respondió 202 (bloqueo anti-bot)
-- ✅ MercadoLibre: 137 encontrados, 5 cumplen
+- ❌ Argenprop: www.argenprop.com respondió 405 (bloqueo anti-bot)
+- ✅ MercadoLibre: 137 encontrados, 9 cumplen
 - ✅ Mudafy: 167 encontrados, 1 cumplen
 - ✅ RE/MAX: 903 encontrados, 2 cumplen
