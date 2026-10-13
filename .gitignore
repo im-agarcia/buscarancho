@@ -4,3 +4,4 @@ __pycache__/
 .wrangler/
 node_modules/
 .dev.vars
+web/.panel-token

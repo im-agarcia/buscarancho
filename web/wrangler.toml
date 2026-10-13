@@ -7,10 +7,10 @@ type = "Text"
 globs = ["**/*.html"]
 fallthrough = true
 
-# Crear con: npx wrangler kv namespace create KV   (y pegar acá el id que devuelve)
+# Creado con: npx wrangler kv namespace create KV
 [[kv_namespaces]]
 binding = "KV"
-id = "REEMPLAZAR_CON_EL_ID_DEL_KV"
+id = "2e68cb858d1f4abdba3d82ea7682410c"
 
 # Secretos (npx wrangler secret put NOMBRE):
 #   PANEL_TOKEN  clave para guardar filtros desde el formulario y para que el buscador publique resultados
