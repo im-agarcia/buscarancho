@@ -32,14 +32,14 @@ def load_filters(path: Path) -> Filters:
     return Filters.from_dict(json.loads(path.read_text()))
 
 
-def push_panel(store: Store, status: dict, now: str) -> None:
+def push_panel(store: Store, status: dict, labels: dict, now: str) -> None:
     panel, token = os.environ.get("PANEL_URL"), os.environ.get("PANEL_TOKEN")
     if not (panel and token):
         return
     active = [e for e in store.listings.values() if e.get("active", True)]
     requests.put(
         panel.rstrip("/") + "/api/listings",
-        json={"updated": now, "status": status, "listings": active},
+        json={"updated": now, "status": status, "labels": labels, "listings": active},
         headers={"Authorization": f"Bearer {token}"},
         timeout=30,
     ).raise_for_status()
@@ -124,7 +124,7 @@ def main() -> int:
         (args.data / "ultima_corrida.md").write_text(text)
         if has_news:
             report.telegram(text)
-        push_panel(store, status, now)
+        push_panel(store, status, labels, now)
         if out := os.environ.get("GITHUB_OUTPUT"):
             with open(out, "a") as fh:
                 fh.write(f"novedades={'true' if has_news else 'false'}\n")

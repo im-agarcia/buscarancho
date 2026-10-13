@@ -20,6 +20,10 @@ El mismo departamento publicado en dos portales (misma dirección y precio) se m
 | MercadoLibre | funciona |
 | RE/MAX | funciona (API pública del sitio) |
 | Mudafy | funciona |
+| Cabaprop | funciona (buscador público del sitio) |
+| Century 21 | funciona |
+| BuscadorProp | funciona |
+| iCasas | funciona; agregador: no informa dirección ni cochera/balcón en la tarjeta, y filtra por dormitorios en vez de ambientes |
 | Argenprop | funciona con pocos pedidos; si recibe muchos seguidos responde con un desafío anti-bot y esa corrida lo saltea |
 | Zonaprop, Properati | no incluidos: bloquean el acceso automatizado y no se intenta evadirlo. Ambos ofrecen alertas por mail propias |
 

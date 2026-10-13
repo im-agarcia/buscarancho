@@ -28,6 +28,15 @@ _last_hit: dict[str, float] = {}
 
 
 def get(url: str, *, params: dict | None = None, timeout: int = 30) -> requests.Response:
+    return _request("GET", url, params=params, timeout=timeout)
+
+
+def post(url: str, *, params: dict | None = None, json: dict | None = None, timeout: int = 30) -> requests.Response:
+    """Para portales cuyo buscador público es un POST con JSON."""
+    return _request("POST", url, params=params, json=json, timeout=timeout)
+
+
+def _request(method: str, url: str, *, timeout: int, **kwargs) -> requests.Response:
     host = urlsplit(url).netloc
     wait = HOST_DELAY.get(host, DELAY) - (time.monotonic() - _last_hit.get(host, 0))
     if wait > 0:
@@ -35,7 +44,7 @@ def get(url: str, *, params: dict | None = None, timeout: int = 30) -> requests.
     last_error: Exception | None = None
     for attempt in range(3):
         try:
-            resp = _session.get(url, params=params, timeout=timeout)
+            resp = _session.request(method, url, timeout=timeout, **kwargs)
         except requests.RequestException as e:
             last_error = e
             time.sleep(2 * (attempt + 1))

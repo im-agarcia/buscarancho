@@ -180,6 +180,7 @@ $("#onlynew").addEventListener("change", render);
   try { form.elements.clave.value = localStorage.getItem("clave") || ""; } catch {}
   const [filters, listings] = await Promise.all([fetch("/api/filters").then((r) => r.json()), fetch("/api/listings").then((r) => r.json())]);
   data = listings;
+  Object.assign(LABELS, data.labels || {});
   fillForm(filters);
   render();
 })().catch((e) => { $("#updated").textContent = "No pude cargar los datos: " + e.message; });
