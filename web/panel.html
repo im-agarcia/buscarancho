@@ -11,6 +11,7 @@
     :root { --bg:#14171c; --card:#1d2128; --ink:#e8eaee; --muted:#98a1b0; --line:#2c323c; --accent:#4cc19a; --accent-ink:#0d1512; --warn:#f0b35a; --new:#fb923c; }
   }
   * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
   body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
   main { max-width:1100px; margin:0 auto; padding:20px 16px 60px; }
   h1 { font-size:22px; margin:0 0 2px; }
@@ -24,6 +25,13 @@
   input, select, button { font:inherit; color:var(--ink); background:var(--bg); border:1px solid var(--line); border-radius:7px; padding:7px 9px; min-width:0; }
   input[type=checkbox] { width:17px; height:17px; padding:0; accent-color:var(--accent); }
   .wide { grid-column:1 / -1; }
+  .multi { margin:0; padding:8px 10px; background:var(--bg); border-radius:7px; }
+  .multi summary { font-weight:400; display:flex; flex-direction:column; gap:3px; list-style:none; }
+  .multi summary::-webkit-details-marker { display:none; }
+  .multi .lbl { font-size:12px; color:var(--muted); }
+  .multi #barrios-sum::after { content:" ▾"; color:var(--muted); }
+  .multi input[type=search] { width:100%; margin:10px 0 8px; background:var(--card); }
+  .opts { display:grid; grid-template-columns:repeat(auto-fill, minmax(170px, 1fr)); gap:6px 12px; max-height:260px; overflow:auto; padding:2px; }
   .row { display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; }
   button { cursor:pointer; background:var(--accent); color:var(--accent-ink); border-color:var(--accent); font-weight:600; padding:8px 16px; }
   button.ghost { background:transparent; color:var(--ink); border-color:var(--line); font-weight:500; }
@@ -60,7 +68,13 @@
       <label>Moneda<select name="moneda"><option>USD</option><option>ARS</option></select></label>
       <label>Precio mín.<input name="precio_min" type="number" min="0" step="1000" placeholder="sin mínimo"></label>
       <label>Precio máx.<input name="precio_max" type="number" min="0" step="1000"></label>
-      <label class="wide">Barrios (separados por coma)<input name="barrios" placeholder="Belgrano, Núñez, Belgrano R"></label>
+      <div class="wide">
+        <details class="multi" id="barrios">
+          <summary><span class="lbl">Barrios</span><span id="barrios-sum"></span></summary>
+          <input type="search" id="barrios-q" placeholder="Buscar barrio…" aria-label="Buscar barrio">
+          <div class="opts" id="barrios-opts"></div>
+        </details>
+      </div>
       <div class="wide row">
         <label class="check"><input name="cochera" type="checkbox"> Cochera</label>
         <label class="check"><input name="balcon" type="checkbox"> Balcón</label>
@@ -86,6 +100,7 @@
 const $ = (s) => document.querySelector(s);
 const form = $("#form");
 const DEFAULTS = { operacion:"venta", tipo:"departamento", barrios:["Belgrano","Núñez","Belgrano R"], ambientes_min:4, banos_min:2, precio_max:200000, moneda:"USD", cochera:true, balcon:true, incluir_sin_confirmar:false, fuentes:[] };
+const BARRIOS = ["Agronomía","Almagro","Balvanera","Barracas","Barrancas de Belgrano","Belgrano","Belgrano C","Belgrano Chico","Belgrano R","Boedo","Caballito","Chacarita","Coghlan","Colegiales","Constitución","Flores","Floresta","La Boca","La Paternal","Liniers","Mataderos","Monte Castro","Monserrat","Nueva Pompeya","Núñez","Palermo","Parque Avellaneda","Parque Chacabuco","Parque Chas","Parque Patricios","Puerto Madero","Recoleta","Retiro","Saavedra","San Cristóbal","San Nicolás","San Telmo","Vélez Sarsfield","Versalles","Villa Crespo","Villa del Parque","Villa Devoto","Villa General Mitre","Villa Lugano","Villa Luro","Villa Ortúzar","Villa Pueyrredón","Villa Real","Villa Riachuelo","Villa Santa Rita","Villa Soldati","Villa Urquiza"];
 const LABELS = { argenprop:"Argenprop", mercadolibre:"MercadoLibre", remax:"RE/MAX", mudafy:"Mudafy" };
 let data = { listings: [], status: {} };
 
@@ -107,10 +122,23 @@ function fillForm(f) {
     if (input.type === "checkbox") input.checked = Boolean(v);
     else input.value = Array.isArray(v) ? v.join(", ") : (v ?? "");
   }
+  const saved = ({ ...DEFAULTS, ...f }).barrios || [];
+  const isSaved = (b) => saved.some((x) => norm(x) === norm(b));
+  // un barrio guardado que no está en la lista (cargado a mano en filters.json) se conserva como opción
+  const options = [...BARRIOS, ...saved.filter((x) => !BARRIOS.some((b) => norm(b) === norm(x)))];
+  $("#barrios-opts").replaceChildren(...options.map((b) =>
+    el("label", { className: "check" }, el("input", { type: "checkbox", name: "barrio", value: b, checked: isSaved(b) }), " " + b)));
+  barriosSummary();
   const names = [...new Set([...Object.keys(LABELS), ...Object.keys(data.status || {})])];
   const chosen = (f.fuentes && f.fuentes.length) ? f.fuentes : names;
   $("#fuentes").replaceChildren(...names.map((n) =>
     el("label", { className: "check" }, el("input", { type: "checkbox", name: "fuente", value: n, checked: chosen.includes(n) }), " " + (LABELS[n] || n))));
+}
+
+const pickedBarrios = () => [...form.querySelectorAll("[name=barrio]:checked")].map((c) => c.value);
+function barriosSummary() {
+  const picked = pickedBarrios();
+  $("#barrios-sum").textContent = picked.length ? picked.join(", ") : "Toda la ciudad";
 }
 
 function readForm() {
@@ -119,7 +147,7 @@ function readForm() {
   const marked = fuentes.filter((c) => c.checked).map((c) => c.value);
   return {
     operacion: v("operacion"), tipo: v("tipo"), moneda: v("moneda"),
-    barrios: v("barrios").split(",").map((s) => s.trim()).filter(Boolean),
+    barrios: pickedBarrios(),
     ambientes_min: v("ambientes_min"), ambientes_max: v("ambientes_max"), banos_min: v("banos_min"),
     precio_min: v("precio_min"), precio_max: v("precio_max"),
     cochera: form.elements.cochera.checked, balcon: form.elements.balcon.checked,
@@ -175,6 +203,11 @@ $("#run").addEventListener("click", async () => {
   catch (e) { $("#msg").textContent = e.message; }
 });
 $("#onlynew").addEventListener("change", render);
+$("#barrios-opts").addEventListener("change", barriosSummary);
+$("#barrios-q").addEventListener("input", (ev) => {
+  const q = norm(ev.target.value);
+  for (const opt of $("#barrios-opts").children) opt.hidden = !norm(opt.textContent).includes(q);
+});
 
 (async () => {
   try { form.elements.clave.value = localStorage.getItem("clave") || ""; } catch {}
