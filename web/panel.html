@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Buscarancho</title>
+<style>
+  :root { --bg:#f6f5f1; --card:#fff; --ink:#1d2433; --muted:#667085; --line:#e2e0d8; --accent:#1f6f54; --accent-ink:#fff; --warn:#a15c00; --new:#c2410c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14171c; --card:#1d2128; --ink:#e8eaee; --muted:#98a1b0; --line:#2c323c; --accent:#4cc19a; --accent-ink:#0d1512; --warn:#f0b35a; --new:#fb923c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:1100px; margin:0 auto; padding:20px 16px 60px; }
+  h1 { font-size:22px; margin:0 0 2px; }
+  .sub { color:var(--muted); margin:0 0 18px; font-size:13px; }
+  details, .item { background:var(--card); border:1px solid var(--line); border-radius:10px; }
+  details { padding:12px 16px; margin-bottom:18px; }
+  summary { cursor:pointer; font-weight:600; }
+  form { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px 14px; margin-top:14px; }
+  label { display:flex; flex-direction:column; gap:4px; font-size:12px; color:var(--muted); }
+  label.check { flex-direction:row; align-items:center; gap:8px; font-size:14px; color:var(--ink); }
+  input, select, button { font:inherit; color:var(--ink); background:var(--bg); border:1px solid var(--line); border-radius:7px; padding:7px 9px; min-width:0; }
+  input[type=checkbox] { width:17px; height:17px; padding:0; accent-color:var(--accent); }
+  .wide { grid-column:1 / -1; }
+  .row { display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; }
+  button { cursor:pointer; background:var(--accent); color:var(--accent-ink); border-color:var(--accent); font-weight:600; padding:8px 16px; }
+  button.ghost { background:transparent; color:var(--ink); border-color:var(--line); font-weight:500; }
+  #msg { font-size:13px; color:var(--muted); }
+  .bar { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; justify-content:space-between; margin-bottom:12px; }
+  .status { font-size:13px; color:var(--muted); display:flex; flex-wrap:wrap; gap:4px 14px; }
+  .status .bad { color:var(--warn); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:14px; }
+  .item { overflow:hidden; display:flex; flex-direction:column; }
+  .item img { width:100%; aspect-ratio:4/3; object-fit:cover; background:var(--line); display:block; }
+  .body { padding:10px 12px 12px; display:flex; flex-direction:column; gap:4px; flex:1; }
+  .price { font-size:18px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .tag { font-size:11px; font-weight:700; color:var(--new); margin-left:6px; text-transform:uppercase; letter-spacing:.04em; }
+  .muted { color:var(--muted); font-size:13px; }
+  .warn { color:var(--warn); font-size:12px; }
+  .links { margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 12px; font-size:13px; }
+  a { color:var(--accent); }
+  .empty { color:var(--muted); padding:30px 0; text-align:center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Buscarancho</h1>
+  <p class="sub" id="updated">Cargando…</p>
+
+  <details id="panel">
+    <summary>Filtros de búsqueda</summary>
+    <form id="form">
+      <label>Operación<select name="operacion"><option value="venta">Compra</option><option value="alquiler">Alquiler</option></select></label>
+      <label>Tipo<select name="tipo"><option value="departamento">Departamento</option><option value="casa">Casa</option><option value="ph">PH</option></select></label>
+      <label>Ambientes (mín.)<input name="ambientes_min" type="number" min="1" max="10"></label>
+      <label>Ambientes (máx.)<input name="ambientes_max" type="number" min="1" max="10" placeholder="sin tope"></label>
+      <label>Baños (mín.)<input name="banos_min" type="number" min="1" max="6"></label>
+      <label>Moneda<select name="moneda"><option>USD</option><option>ARS</option></select></label>
+      <label>Precio mín.<input name="precio_min" type="number" min="0" step="1000" placeholder="sin mínimo"></label>
+      <label>Precio máx.<input name="precio_max" type="number" min="0" step="1000"></label>
+      <label class="wide">Barrios (separados por coma)<input name="barrios" placeholder="Belgrano, Núñez, Belgrano R"></label>
+      <div class="wide row">
+        <label class="check"><input name="cochera" type="checkbox"> Cochera</label>
+        <label class="check"><input name="balcon" type="checkbox"> Balcón</label>
+        <label class="check"><input name="incluir_sin_confirmar" type="checkbox"> Incluir avisos que no aclaran cochera/balcón</label>
+      </div>
+      <div class="wide row" id="fuentes"></div>
+      <label>Clave del panel<input name="clave" type="password" autocomplete="current-password"></label>
+      <div class="wide row">
+        <button type="submit">Guardar filtros</button>
+        <button type="button" class="ghost" id="run">Buscar ahora</button>
+        <span id="msg">Los cambios se aplican en la próxima corrida (8:00, 12:00 y 18:00).</span>
+      </div>
+    </form>
+  </details>
+
+  <div class="bar">
+    <div class="status" id="status"></div>
+    <label class="check muted"><input type="checkbox" id="onlynew"> Solo nuevas (últimas 24 h)</label>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+<script>
+const $ = (s) => document.querySelector(s);
+const form = $("#form");
+const DEFAULTS = { operacion:"venta", tipo:"departamento", barrios:["Belgrano","Núñez","Belgrano R"], ambientes_min:4, banos_min:2, precio_max:200000, moneda:"USD", cochera:true, balcon:true, incluir_sin_confirmar:false, fuentes:[] };
+const LABELS = { argenprop:"Argenprop", mercadolibre:"MercadoLibre", remax:"RE/MAX", mudafy:"Mudafy" };
+let data = { listings: [], status: {} };
+
+const el = (tag, props = {}, ...kids) => { const n = Object.assign(document.createElement(tag), props); n.append(...kids); return n; };
+const money = (e) => e.price ? `${e.currency || ""} ${e.price.toLocaleString("es-AR")}` : "s/precio";
+const norm = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const parseDate = (s) => new Date((s || "").replace(" ", "T") + ":00-03:00");
+const safeUrl = (u) => /^https:\/\//.test(u || "") ? u : "#";
+
+function dupKey(e) {
+  const m = norm(e.address).match(/([a-z .]+?) (\d{2,5})\b/);
+  return m ? `${m[1].trim()} ${m[2]}|${e.price}` : `${e.source}:${e.id}`;
+}
+
+function fillForm(f) {
+  for (const [k, v] of Object.entries({ ...DEFAULTS, ...f })) {
+    const input = form.elements[k];
+    if (!input || k === "fuentes") continue;
+    if (input.type === "checkbox") input.checked = Boolean(v);
+    else input.value = Array.isArray(v) ? v.join(", ") : (v ?? "");
+  }
+  const names = [...new Set([...Object.keys(LABELS), ...Object.keys(data.status || {})])];
+  const chosen = (f.fuentes && f.fuentes.length) ? f.fuentes : names;
+  $("#fuentes").replaceChildren(...names.map((n) =>
+    el("label", { className: "check" }, el("input", { type: "checkbox", name: "fuente", value: n, checked: chosen.includes(n) }), " " + (LABELS[n] || n))));
+}
+
+function readForm() {
+  const v = (k) => form.elements[k].value.trim();
+  const fuentes = [...form.querySelectorAll("[name=fuente]")];
+  const marked = fuentes.filter((c) => c.checked).map((c) => c.value);
+  return {
+    operacion: v("operacion"), tipo: v("tipo"), moneda: v("moneda"),
+    barrios: v("barrios").split(",").map((s) => s.trim()).filter(Boolean),
+    ambientes_min: v("ambientes_min"), ambientes_max: v("ambientes_max"), banos_min: v("banos_min"),
+    precio_min: v("precio_min"), precio_max: v("precio_max"),
+    cochera: form.elements.cochera.checked, balcon: form.elements.balcon.checked,
+    incluir_sin_confirmar: form.elements.incluir_sin_confirmar.checked,
+    fuentes: marked.length === fuentes.length ? [] : marked,
+  };
+}
+
+function render() {
+  const last = parseDate(data.updated);
+  const groups = new Map();
+  for (const e of data.listings || []) { const k = dupKey(e); groups.set(k, [...(groups.get(k) || []), e]); }
+  let list = [...groups.values()].map((g) => ({ g, e: g[0], isNew: g.every((x) => last - parseDate(x.first_seen) < 864e5) }));
+  if ($("#onlynew").checked) list = list.filter((x) => x.isNew);
+  list.sort((a, b) => (b.isNew - a.isNew) || (a.e.price - b.e.price));
+
+  $("#updated").textContent = data.updated ? `Última corrida: ${data.updated} · ${groups.size} propiedades cumplen el filtro` : "Todavía no hay corridas publicadas.";
+  $("#status").replaceChildren(...Object.entries(data.status || {}).map(([n, s]) =>
+    el("span", { className: s.ok ? "" : "bad", title: s.ok ? "" : s.error }, `${s.ok ? "✓" : "✗"} ${LABELS[n] || n}${s.ok ? `: ${s.matched}` : ": sin respuesta"}`)));
+
+  $("#grid").replaceChildren(...list.map(({ g, e, isNew }) => {
+    const feats = [e.rooms && `${e.rooms} amb`, e.bathrooms && `${e.bathrooms} baños`, e.area && `${e.area} m²`].filter(Boolean).join(" · ");
+    const body = el("div", { className: "body" },
+      el("div", { className: "price" }, money(e), isNew ? el("span", { className: "tag" }, "nueva") : ""),
+      el("div", {}, e.address || e.title),
+      el("div", { className: "muted" }, [e.location !== e.address && e.location, feats, e.expenses && `exp. ${e.expenses}`].filter(Boolean).join(" — ")));
+    if (e.sin_confirmar && e.sin_confirmar.length) body.append(el("div", { className: "warn" }, `Sin confirmar: ${e.sin_confirmar.join(", ")}`));
+    body.append(el("div", { className: "links" }, ...g.map((x) => el("a", { href: safeUrl(x.url), target: "_blank", rel: "noopener noreferrer" }, LABELS[x.source] || x.source))));
+    const item = el("article", { className: "item" });
+    if (/^https:\/\//.test(e.image || "")) item.append(el("img", { src: e.image, loading: "lazy", alt: "", referrerPolicy: "no-referrer" }));
+    item.append(body);
+    return item;
+  }));
+  if (!list.length) $("#grid").append(el("p", { className: "empty" }, "No hay propiedades para mostrar."));
+}
+
+async function send(path, method, body) {
+  const clave = form.elements.clave.value;
+  try { localStorage.setItem("clave", clave); } catch {}
+  const r = await fetch(path, { method, headers: { authorization: `Bearer ${clave}`, "content-type": "application/json" }, body: body && JSON.stringify(body) });
+  const out = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(out.error || `Error ${r.status}`);
+  return out;
+}
+
+form.addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  try { fillForm(await send("/api/filters", "PUT", readForm())); $("#msg").textContent = "Filtros guardados. Se aplican en la próxima corrida."; }
+  catch (e) { $("#msg").textContent = e.message; }
+});
+$("#run").addEventListener("click", async () => {
+  try { await send("/api/run", "POST"); $("#msg").textContent = "Búsqueda lanzada: los resultados aparecen en unos minutos."; }
+  catch (e) { $("#msg").textContent = e.message; }
+});
+$("#onlynew").addEventListener("change", render);
+
+(async () => {
+  try { form.elements.clave.value = localStorage.getItem("clave") || ""; } catch {}
+  const [filters, listings] = await Promise.all([fetch("/api/filters").then((r) => r.json()), fetch("/api/listings").then((r) => r.json())]);
+  data = listings;
+  fillForm(filters);
+  render();
+})().catch((e) => { $("#updated").textContent = "No pude cargar los datos: " + e.message; });
+</script>
+</body>
+</html>

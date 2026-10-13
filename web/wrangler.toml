@@ -1,0 +1,18 @@
+name = "buscarancho"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+fallthrough = true
+
+# Crear con: npx wrangler kv namespace create KV   (y pegar acá el id que devuelve)
+[[kv_namespaces]]
+binding = "KV"
+id = "REEMPLAZAR_CON_EL_ID_DEL_KV"
+
+# Secretos (npx wrangler secret put NOMBRE):
+#   PANEL_TOKEN  clave para guardar filtros desde el formulario y para que el buscador publique resultados
+#   GH_TOKEN     (opcional) token de GitHub con permiso Actions:write, para el botón "Buscar ahora"
+#   GH_REPO      (opcional) im-agarcia/buscarancho

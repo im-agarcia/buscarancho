@@ -1,0 +1,15 @@
+{
+  "operacion": "venta",
+  "tipo": "departamento",
+  "barrios": ["Belgrano", "Núñez", "Belgrano R"],
+  "ambientes_min": 4,
+  "ambientes_max": null,
+  "banos_min": 2,
+  "precio_min": null,
+  "precio_max": 200000,
+  "moneda": "USD",
+  "cochera": true,
+  "balcon": true,
+  "incluir_sin_confirmar": false,
+  "fuentes": []
+}
