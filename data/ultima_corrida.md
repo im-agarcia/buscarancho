@@ -1,9 +1,14 @@
-# Buscarancho — 2026-10-17 14:43
+# Buscarancho — 2026-10-17 19:50
 
+
+## 🚫 2 dadas de baja
+
+- USD 195.000 — Departamento en Belgrano, Capital Federal (iCasas)
+- USD 2.500 — Departamento en Belgrano, Capital Federal (iCasas)
 
 ## Portales
 
-24 avisos activos que cumplen el filtro.
+22 avisos activos que cumplen el filtro.
 
 - ❌ Argenprop: www.argenprop.com respondió 405 (bloqueo anti-bot)
 - ✅ BuscadorProp: 0 encontrados, 0 cumplen
