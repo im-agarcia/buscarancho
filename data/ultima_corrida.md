@@ -1,10 +1,5 @@
-# Buscarancho — 2026-10-17 11:01
+# Buscarancho — 2026-10-17 14:43
 
-
-## 🚫 2 dadas de baja
-
-- USD 195.000 — BLANCO ENCALADA Al 3600. Entre Washington Y Naon (MercadoLibre)
-- USD 2.500 — Virrey Loreto Al 1900 (MercadoLibre)
 
 ## Portales
 
