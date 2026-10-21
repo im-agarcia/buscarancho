@@ -1,18 +1,21 @@
-# Buscarancho — 2026-10-20 20:35
+# Buscarancho — 2026-10-21 12:48
 
+## 🆕 1 propiedades nuevas
+
+- **USD 158.000** — Departamento en Belgrano, Capital Federal (Belgrano, Capital Federal) — 4 amb, 2 baños, 80 m² — USD 1.975/m² — [iCasas](https://www.icasas.com.ar/inmueble/55f0-adde-1a15c6d-6d8f1b01d106-7b97)
 
 ## Portales
 
-26 avisos activos que cumplen el filtro.
+27 avisos activos que cumplen el filtro.
 
 - ❌ Argenprop: www.argenprop.com respondió 405 (bloqueo anti-bot)
-- ❌ BuscadorProp: HTTPError: 500 en https://www.buscadorprop.com.ar/departamentos-venta-4-ambientes-mas-de-4-ambientes-2-banos-3-banos-mas-de-3-banos-belgrano-nunez-belgrano-r-hasta-200000-dolares-mas-nuevas
+- ✅ BuscadorProp: 0 encontrados, 0 cumplen
 - ✅ Cabaprop: 28 encontrados, 4 cumplen
-- ✅ Century 21: 161 encontrados, 0 cumplen
-- ✅ iCasas: 132 encontrados, 5 cumplen
+- ✅ Century 21: 160 encontrados, 0 cumplen
+- ✅ iCasas: 129 encontrados, 6 cumplen
 - ✅ Lepore: 7 encontrados, 0 cumplen
-- ✅ MercadoLibre: 162 encontrados, 13 cumplen
+- ✅ MercadoLibre: 156 encontrados, 11 cumplen
 - ✅ Mudafy: 172 encontrados, 2 cumplen
-- ✅ RE/MAX: 890 encontrados, 2 cumplen
-- ✅ Tizado: 82 encontrados, 0 cumplen
+- ✅ RE/MAX: 884 encontrados, 1 cumplen
+- ✅ Tizado: 83 encontrados, 0 cumplen
 - ✅ Toribio Achával: 0 encontrados, 0 cumplen
