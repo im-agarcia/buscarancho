@@ -1,9 +1,5 @@
-# Buscarancho — 2026-10-24 19:49
+# Buscarancho — 2026-10-25 11:44
 
-
-## 🚫 1 dadas de baja
-
-- USD 195.000 — Departamento en Belgrano, Capital Federal (iCasas)
 
 ## Portales
 
@@ -13,10 +9,10 @@
 - ✅ BuscadorProp: 0 encontrados, 0 cumplen
 - ✅ Cabaprop: 28 encontrados, 4 cumplen
 - ✅ Century 21: 162 encontrados, 0 cumplen
-- ✅ iCasas: 128 encontrados, 5 cumplen
+- ✅ iCasas: 126 encontrados, 4 cumplen
 - ✅ Lepore: 7 encontrados, 0 cumplen
 - ✅ MercadoLibre: 161 encontrados, 11 cumplen
 - ✅ Mudafy: 175 encontrados, 2 cumplen
-- ✅ RE/MAX: 887 encontrados, 1 cumplen
-- ✅ Tizado: 117 encontrados, 0 cumplen
+- ✅ RE/MAX: 886 encontrados, 1 cumplen
+- ✅ Tizado: 116 encontrados, 0 cumplen
 - ✅ Toribio Achával: 0 encontrados, 0 cumplen
