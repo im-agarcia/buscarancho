@@ -1,4 +1,4 @@
-# Buscarancho — 2026-10-31 12:56
+# Buscarancho — 2026-10-31 20:55
 
 
 ## Portales
@@ -13,6 +13,6 @@
 - ✅ Lepore: 7 encontrados, 0 cumplen
 - ✅ MercadoLibre: 161 encontrados, 15 cumplen
 - ✅ Mudafy: 177 encontrados, 4 cumplen
-- ✅ RE/MAX: 868 encontrados, 1 cumplen
-- ✅ Tizado: 114 encontrados, 0 cumplen
+- ✅ RE/MAX: 867 encontrados, 1 cumplen
+- ✅ Tizado: 116 encontrados, 0 cumplen
 - ✅ Toribio Achával: 0 encontrados, 0 cumplen
