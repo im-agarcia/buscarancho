@@ -1,9 +1,5 @@
-# Buscarancho — 2026-11-05 15:28
+# Buscarancho — 2026-11-05 22:20
 
-
-## 🚫 1 dadas de baja
-
-- USD 195.000 — Blanco Encalada 3600 (MercadoLibre)
 
 ## Portales
 
@@ -11,12 +7,12 @@
 
 - ❌ Argenprop: www.argenprop.com respondió 405 (bloqueo anti-bot)
 - ✅ BuscadorProp: 0 encontrados, 0 cumplen
-- ✅ Cabaprop: 28 encontrados, 4 cumplen
-- ✅ Century 21: 169 encontrados, 0 cumplen
-- ✅ iCasas: 119 encontrados, 6 cumplen
+- ❌ Cabaprop: TypeError: string indices must be integers, not 'str'
+- ✅ Century 21: 170 encontrados, 0 cumplen
+- ✅ iCasas: 114 encontrados, 6 cumplen
 - ✅ Lepore: 6 encontrados, 0 cumplen
-- ✅ MercadoLibre: 151 encontrados, 11 cumplen
+- ✅ MercadoLibre: 149 encontrados, 11 cumplen
 - ✅ Mudafy: 178 encontrados, 4 cumplen
-- ✅ RE/MAX: 857 encontrados, 1 cumplen
+- ✅ RE/MAX: 861 encontrados, 1 cumplen
 - ✅ Tizado: 118 encontrados, 0 cumplen
 - ✅ Toribio Achával: 1 encontrados, 0 cumplen
