@@ -1,4 +1,4 @@
-# Buscarancho — 2026-11-10 15:26
+# Buscarancho — 2026-11-10 21:58
 
 
 ## Portales
@@ -9,10 +9,10 @@
 - ❌ BuscadorProp: www.buscadorprop.com.ar respondió 403 (bloqueo anti-bot)
 - ❌ Cabaprop: TypeError: string indices must be integers, not 'str'
 - ✅ Century 21: 172 encontrados, 0 cumplen
-- ✅ iCasas: 118 encontrados, 6 cumplen
+- ✅ iCasas: 117 encontrados, 6 cumplen
 - ✅ Lepore: 6 encontrados, 0 cumplen
 - ✅ MercadoLibre: 152 encontrados, 11 cumplen
 - ✅ Mudafy: 178 encontrados, 4 cumplen
-- ✅ RE/MAX: 866 encontrados, 1 cumplen
+- ✅ RE/MAX: 871 encontrados, 1 cumplen
 - ✅ Tizado: 116 encontrados, 0 cumplen
 - ✅ Toribio Achával: 1 encontrados, 0 cumplen
