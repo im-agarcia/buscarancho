@@ -1,4 +1,4 @@
-# Buscarancho — 2026-11-22 22:21
+# Buscarancho — 2026-11-23 19:25
 
 
 ## Portales
@@ -12,7 +12,7 @@
 - ✅ iCasas: 109 encontrados, 3 cumplen
 - ✅ Lepore: 6 encontrados, 0 cumplen
 - ❌ MercadoLibre: inmuebles.mercadolibre.com.ar respondió 200 (bloqueo anti-bot)
-- ✅ Mudafy: 170 encontrados, 1 cumplen
+- ✅ Mudafy: 171 encontrados, 1 cumplen
 - ❌ RE/MAX: api-ar.redremax.com respondió 403 (bloqueo anti-bot)
 - ✅ Tizado: 118 encontrados, 0 cumplen
 - ✅ Toribio Achával: 1 encontrados, 0 cumplen
