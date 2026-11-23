@@ -1,11 +1,11 @@
-# Buscarancho — 2026-11-22 15:11
+# Buscarancho — 2026-11-22 22:21
 
 
 ## Portales
 
 21 avisos activos que cumplen el filtro.
 
-- ❌ Argenprop: www.argenprop.com respondió 202 (bloqueo anti-bot)
+- ❌ Argenprop: www.argenprop.com respondió 405 (bloqueo anti-bot)
 - ❌ BuscadorProp: www.buscadorprop.com.ar respondió 403 (bloqueo anti-bot)
 - ❌ Cabaprop: TypeError: string indices must be integers, not 'str'
 - ✅ Century 21: 236 encontrados, 0 cumplen
